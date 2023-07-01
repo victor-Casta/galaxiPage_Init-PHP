@@ -1,0 +1,119 @@
+:root {
+    /* Colores */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+main {
+   width: 100%;
+   height: 100vh;
+   display: grid;
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: 1fr;
+   justify-content: center;
+   align-items: center;
+}
+
+main .section-info-left {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #221E1F;
+}
+main .section-info-left h2 {
+    font-size: 2rem;
+    color: var(--just-white);
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+main .section-info-left p {
+    font-size: 1.4rem;
+    color: var(--just-white);
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+main .section-info-left .winner-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+main .section-info-left .check-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+main .section-form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .section-form-right form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 30px;
+    padding: 0 30px;
+    min-width: 300px;
+    max-width: 500px;
+}
+.section-form-right form  input{
+    margin-bottom: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    border: none;
+    color: #393939;
+    font-size: 12px;
+    padding: 5px;
+}
+.section-form-right form  label{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.section-form-right .button-form {
+    display: flex;
+}
+.section-form-right .button-form input {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin: 29px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bitcoin-orange);
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 4px 6px 12px 0px rgb(0 0 0 / 75%);
+}
+.section-form-right .button-form input:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 700px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+}

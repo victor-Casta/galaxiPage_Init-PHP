@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario1</title>
+    <link rel="stylesheet" href="./css/style.form.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1511/1511122.png" type="icon.png">
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="section-info-left">
+            <h2>¡BUENA ELECCIÓN!</h2>
+            <p>Acabas de seleccionar la promocion de <b>2</b> boletas  por un valor de <b>$50.000 COP</b></p>
+            <img class="winner-img" src="./img/image-form.png" alt="winner">
+            <img class="check-img" src="./img/check-ok.svg" alt="ok">
+            <p>Por favor llena el siguiente formulario con la información requerida</p>
+        </section>
+        <section class="section-form-right">
+            <form name="form" action="registro.php" method="post">
+                <label for="Nombres">Nombre y Apellidos</label>
+                <input type="text" name="NombreApellidos" required>
+               
+                <label for="Cedula">Cedula</label>
+                <input type="text" name="Cedula" required>
+                
+                <label for="Direccion">Direccion</label>
+                <input type="text" name="Direccion" required>
+                
+                <label for="Celular">Celular</label>
+                <input type="text" name="Celular" required>
+        
+            <div class="button-form">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+        
+         </form>
+        </section>
+    </main>
+</body>
+</html>
